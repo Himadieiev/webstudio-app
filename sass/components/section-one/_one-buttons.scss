@@ -1,0 +1,84 @@
+.button-main {
+  display: inline-block;
+
+  background-color: $second-color;
+  color: $third-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #188CE8;
+    }
+
+  @media screen and (max-width: 1199px) {
+    padding: 10px 24px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+    }
+}
+
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: $third-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-close__icon {
+  fill: #000000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .button-close:hover &,
+    .button-close:focus & {
+      fill: $hoverfocus-color;
+    }
+}
+
+.button-send {
+  width: 200px;
+  height: 50px;
+
+  background-color: $second-color;
+  color: $third-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  font-family: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      background-color: #188CE8;
+    }
+}

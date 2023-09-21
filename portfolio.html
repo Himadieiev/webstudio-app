@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container container-header">
+        <a href="./index.html" class="logo"><span class="logo--color">Web</span>Studio</a>
+        <button
+          type="button"
+          class="button-menu"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="Перемикач мобільного меню"
+            class="button-menu__icon"
+          >
+            <use href="./images/iconc.svg#icon-close-mob" class="icon-cross"></use>
+            <use href="./images/iconc.svg#icon-menu-mob" class="icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav class="navigation">
+            <ul class="navigation__list list--style">
+              <li>
+                <a href="./index.html" class="navigation__link">Студія</a>
+              </li>
+              <li>
+                <a href="./portfolio.html" class="navigation__link navigation__link--current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li><a href="" class="navigation__link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts-list list--style">
+            <li class="contacts-list__item">
+              <a href="tel:+380961111111" class="contacts-list__link contacts-list__link--tel">
+                <svg
+                  class="contacts-list__icon contacts-list__icon--tel"
+                  width="10px"
+                  height="16px"
+                >
+                  <use href="./images/iconc.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="contacts-list__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-list__link contacts-list__link--mail"
+                ><svg
+                  class="contacts-list__icon contacts-list__icon--mail"
+                  width="16px"
+                  height="12px"
+                >
+                  <use href="./images/iconc.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-socialmedia list--style">
+            <li class="mobile-socialmedia__item">
+              <a
+                href="https://www.instagram.com/"
+                class="mobile-socialmedia__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile-socialmedia__item mobile-socialmedia__item--line">
+              <a
+                href="https://twitter.com/"
+                class="mobile-socialmedia__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile-socialmedia__item mobile-socialmedia__item--line">
+              <a
+                href="https://www.facebook.com/"
+                class="mobile-socialmedia__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile-socialmedia__item mobile-socialmedia__item--line">
+              <a
+                href="https://www.linkedin.com/"
+                class="mobile-socialmedia__link"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-portfolio">
+        <div class="container portfolio">
+          <h1 class="visually-hidden">Проекти вебстудії</h1>
+          <ul class="portfolio__filter list--style">
+            <li class="portfolio__button item--style">
+              <button type="button" class="button-filter">Усі</button>
+            </li>
+            <li class="portfolio__button item--style">
+              <button type="button" class="button-filter">Веб-сайти</button>
+            </li>
+            <li class="portfolio__button item--style">
+              <button type="button" class="button-filter">Додатки</button>
+            </li>
+            <li class="portfolio__button item--style">
+              <button type="button" class="button-filter">Дизайн</button>
+            </li>
+            <li class="portfolio__button item--style">
+              <button type="button" class="button-filter">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portfolio__list list--style">
+            <li class="item--style portfolio__item portfolio__item-height">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-website-one-354@1x.jpg 354w,
+                      ./images/tab-website-one-354@2x.jpg 708w,
+                      ./images/des-website-one-370@1x.jpg 370w,
+                      ./images/des-website-one-370@2x.jpg 740w,
+                      ./images/mob-website-one-450@1x.jpg 450w,
+                      ./images/mob-website-one-450@2x.jpg 900w
+                    "
+                    src="./images/tab-website-one-354@1x.jpg"
+                    alt="Веб-сайт Технокряк"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                      Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                      приватну особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Технокряк</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-design-one-354@1x.jpg 354w,
+                      ./images/tab-design-one-354@2x.jpg 708w,
+                      ./images/des-design-one-370@1x.jpg 370w,
+                      ./images/des-design-one-370@2x.jpg 740w,
+                      ./images/mob-design-one-450@1x.jpg 450w,
+                      ./images/mob-design-one-450@2x.jpg 900w
+                    "
+                    src="./images/tab-design-one-354@1x.jpg"
+                    alt="Дизайн Постер New Orlean vs Golden Star"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio__text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-app-one-354@1x.jpg 354w,
+                      ./images/tab-app-one-354@2x.jpg 708w,
+                      ./images/des-app-one-370@1x.jpg 370w,
+                      ./images/des-app-one-370@2x.jpg 740w,
+                      ./images/mob-app-one-450@1x.jpg 450w,
+                      ./images/mob-app-one-450@2x.jpg 900w
+                    "
+                    src="./images/tab-app-one-354@1x.jpg"
+                    alt="Додаток Ресторан Seafood"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Ресторан Seafood</h2>
+                  <p class="portfolio__text">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-marketing-one-354@1x.jpg 354w,
+                      ./images/tab-marketing-one-354@2x.jpg 708w,
+                      ./images/des-marketing-one-370@1x.jpg 370w,
+                      ./images/des-marketing-one-370@2x.jpg 740w,
+                      ./images/mob-marketing-one-450@1x.jpg 450w,
+                      ./images/mob-marketing-one-450@2x.jpg 900w
+                    "
+                    src="./images/tab-marketing-one-354@1x.jpg"
+                    alt="Маркетинг Проєкт Prime"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Проєкт Prime</h2>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-app-two-354@1x.jpg 354w,
+                      ./images/tab-app-two-354@2x.jpg 708w,
+                      ./images/des-app-two-370@1x.jpg 370w,
+                      ./images/des-app-two-370@2x.jpg 740w,
+                      ./images/mob-app-two-450@1x.jpg 450w,
+                      ./images/mob-app-two-450@2x.jpg 900w
+                    "
+                    src="./images/tab-app-two-354@1x.jpg"
+                    alt="Додаток Проєкт Boxes"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Проєкт Boxes</h2>
+                  <p class="portfolio__text">Додаток</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-website-two-354@1x.jpg 354w,
+                      ./images/tab-website-two-354@2x.jpg 708w,
+                      ./images/des-website-two-370@1x.jpg 370w,
+                      ./images/des-website-two-370@2x.jpg 740w,
+                      ./images/mob-website-two-450@1x.jpg 450w,
+                      ./images/mob-website-two-450@2x.jpg 900w
+                    "
+                    src="./images/tab-website-two-354@1x.jpg"
+                    alt="Веб-сайт Inspiration has no Borders"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Inspiration has no Borders</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-design-two-354@1x.jpg 354w,
+                      ./images/tab-design-two-354@2x.jpg 708w,
+                      ./images/des-design-two-370@1x.jpg 370w,
+                      ./images/des-design-two-370@2x.jpg 740w,
+                      ./images/mob-design-two-450@1x.jpg 450w,
+                      ./images/mob-design-two-450@2x.jpg 900w
+                    "
+                    src="./images/tab-design-two-354@1x.jpg"
+                    alt="Дизайн Видання Limited Edition"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Видання Limited Edition</h2>
+                  <p class="portfolio__text">Дизайн</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-marketing-two-354@1x.jpg 354w,
+                      ./images/tab-marketing-two-354@2x.jpg 708w,
+                      ./images/des-marketing-two-370@1x.jpg 370w,
+                      ./images/des-marketing-two-370@2x.jpg 740w,
+                      ./images/mob-marketing-two-450@1x.jpg 450w,
+                      ./images/mob-marketing-two-450@2x.jpg 900w
+                    "
+                    src="./images/tab-marketing-two-354@1x.jpg"
+                    alt="Маркетинг Проєкт LAB"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Проєкт LAB</h2>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div></a
+              >
+            </li>
+            <li class="item--style portfolio__item">
+              <a href="" class="potrfolio__link">
+                <div class="portfolio__image">
+                  <img
+                    srcset="
+                      ./images/tab-app-three-354@1x.jpg 354w,
+                      ./images/tab-app-three-354@2x.jpg 708w,
+                      ./images/des-app-three-370@1x.jpg 370w,
+                      ./images/des-app-three-370@2x.jpg 740w,
+                      ./images/mob-app-three-450@1x.jpg 450w,
+                      ./images/mob-app-three-450@2x.jpg 900w
+                    "
+                    src="./images/tab-app-three-354@1x.jpg"
+                    alt="Додаток Growing Business"
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
+                  />
+                  <div class="card-description">
+                    <p class="card-description__text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, quos? Illum
+                      officia facere voluptas dolores quas nostrum numquam pariatur accusamus nemo
+                      possimus. Inventore, dolor voluptatem.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio__description">
+                  <h2 class="portfolio__subtitle">Growing Business</h2>
+                  <p class="portfolio__text">Додаток</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container container-footer">
+        <div class="logo-address">
+          <a href="./index.html" class="logo-footer"><span class="logo--color">Web</span>Studio</a>
+          <address class="address">
+            <ul class="address__list list--style">
+              <li class="address__item item--style">
+                <a
+                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="address__geolocation"
+                  >м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="address__item address__item--position item--style">
+                <a href="mailto:info@devstudio.com" class="address__mail">info@devstudio.com</a>
+              </li>
+              <li class="address__item item--style">
+                <a href="tel:+380961111111" class="address__tel">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="join">
+          <p class="join__text">приєднуйтесь</p>
+          <ul class="join__socialmedia list--style">
+            <li class="item--style">
+              <a
+                href="https://www.instagram.com/"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="20px" height="20px">
+                  <use href="./images/iconc.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item--style">
+              <a
+                href="https://twitter.com/"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="20px" height="20px">
+                  <use href="./images/iconc.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item--style">
+              <a
+                href="https://www.facebook.com/"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="20px" height="20px">
+                  <use href="./images/iconc.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item--style">
+              <a
+                href="https://www.linkedin.com/"
+                class="join__link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="20px" height="20px">
+                  <use href="./images/iconc.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <p class="subscribe__text">Підпишіться на розсилку</p>
+          <form class="form-footer">
+            <label>
+              <input
+                type="text"
+                name="mail-footer"
+                placeholder="E-mail"
+                class="form-footer__input"
+              />
+            </label>
+            <button type="submit" class="button-footer">
+              <span class="button-footer__text">Підписатися</span>
+              <svg width="24px" height="24px">
+                <use href="./images/iconc.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script defer src="js/mobile-menu.js"></script>
+  </body>
+</html>

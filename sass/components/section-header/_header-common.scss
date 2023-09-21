@@ -1,0 +1,18 @@
+.header {
+  border-bottom: 1px solid #ECECEC;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
+}
+
+.container-header {
+  background-color: $header-background-color;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}

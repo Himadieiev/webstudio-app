@@ -1,0 +1,92 @@
+.section-one {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #C4C4C4;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 480px;
+    height: 400px;
+    }
+  
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    width: 768px;
+    height: 400px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
+    height: 600px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+  .section-one {
+    background-image: url(../images/mob-bg-img@1x.jpg);} 
+
+  @media (min-device-pixel-ratio), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url(../images/mob-bg-img@2x.jpg);}
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-one {
+    background-image: url(../images/tab-bg-img@1x.jpg);} 
+
+  @media (min-device-pixel-ratio), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .section-one {
+    background-image: url(../images/tab-bg-img@2x.jpg);}
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-one {
+    background-image: url(../images/des-bg-img@1x.jpg);
+  }
+
+  @media (min-device-pixel-ratio),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .section-one {
+      background-image: url(../images/des-bg-img@2x.jpg);
+    }
+  }
+}
+
+.section-one__title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $third-color;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 26px;
+    line-height: 1.62;
+    width: 360px;
+    }
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    }
+}
