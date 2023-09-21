@@ -1,4 +1,4 @@
-#WEBSTUDIO-APP
+# WEBSTUDIO-APP
 
 Webstudio-app is a multi-page web application with three pages:
 - Home (Studio)
