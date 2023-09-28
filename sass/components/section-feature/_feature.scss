@@ -33,6 +33,16 @@
     }
 }
 
+.feature__item {
+  @media screen and (min-width: 768px){
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: scale(1.1);
+      }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .feature__item:not(:last-child) {
     margin-bottom: 30px;
