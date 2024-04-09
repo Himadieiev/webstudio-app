@@ -126,23 +126,25 @@
           <h1 class="visually-hidden">Проекти вебстудії</h1>
           <ul class="portfolio__filter list--style">
             <li class="portfolio__button item--style">
-              <button type="button" class="button-filter">Усі</button>
+              <button type="button" class="button-filter" data-category="all">Усі</button>
             </li>
             <li class="portfolio__button item--style">
-              <button type="button" class="button-filter">Веб-сайти</button>
+              <button type="button" class="button-filter" data-category="website">Веб-сайти</button>
             </li>
             <li class="portfolio__button item--style">
-              <button type="button" class="button-filter">Додатки</button>
+              <button type="button" class="button-filter" data-category="app">Додатки</button>
             </li>
             <li class="portfolio__button item--style">
-              <button type="button" class="button-filter">Дизайн</button>
+              <button type="button" class="button-filter" data-category="design">Дизайн</button>
             </li>
             <li class="portfolio__button item--style">
-              <button type="button" class="button-filter">Маркетинг</button>
+              <button type="button" class="button-filter" data-category="marketing">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="portfolio__list list--style">
-            <li class="item--style portfolio__item portfolio__item-height">
+            <li class="item--style portfolio__item portfolio__item-height" data-category="website">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -172,7 +174,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="design">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -202,7 +204,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="app">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -232,7 +234,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="marketing">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -262,7 +264,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="app">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -292,7 +294,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="website">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -322,7 +324,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="design">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -352,7 +354,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="marketing">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -382,7 +384,7 @@
                 </div></a
               >
             </li>
-            <li class="item--style portfolio__item">
+            <li class="item--style portfolio__item" data-category="app">
               <a href="" class="potrfolio__link">
                 <div class="portfolio__image">
                   <img
@@ -516,5 +518,6 @@
       </div>
     </footer>
     <script defer src="js/mobile-menu.js"></script>
+    <script defer src="js/filter.js"></script>
   </body>
 </html>
