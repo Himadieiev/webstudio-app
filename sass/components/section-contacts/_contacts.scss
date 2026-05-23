@@ -15,32 +15,6 @@
   }
 }
 
-.contacts-header {
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
-  }
-}
-
-.contacts-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
-}
-
-.contacts-footer__text {
-  color: $third-color;
-}
-
-.contacts-footer__link {
-  color: $second-color;
-}
-
 .contacts__title {
   font-weight: 700;
   font-size: 36px;
