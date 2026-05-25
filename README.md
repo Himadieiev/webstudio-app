@@ -1,20 +1,59 @@
-# WEBSTUDIO-APP
+<div align="center">
+  <h1 align="center">WebStudio</h1>
 
-Webstudio-app is a multi-page web application with three pages:
-- Home (Studio)
-- Portfolio
-- Contacts
+  <div>
+    <img src="https://img.shields.io/badge/-HTML5-black?style=for-the-badge&logoColor=white&logo=html5&color=E34F26" alt="html5" />
+    <img src="https://img.shields.io/badge/-SCSS-black?style=for-the-badge&logoColor=white&logo=sass&color=CC6699" alt="sass" />
+    <img src="https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logoColor=white&logo=javascript&color=F7DF1E" alt="javascript" />
+  </div>
 
-The header contains a navigation menu that allows users to navigate between the pages. Additionally, in the header, there are links to a phone number and an email address, which, when clicked, allow users to make a phone call or send an email.
+</div>
 
-On the home page, clicking "Order a Service" opens a modal window containing a form for users to submit their information.
+## About
 
-The footer includes links to social media, an address with links to corresponding websites, and a small form.
+WebStudio is a multi-page responsive website for a web development company. It features a clean
+corporate design with interactive elements, modal forms, and portfolio filtering.
 
-The application features responsive design for desktop, tablet, and mobile versions. Animation is used for hover and focus effects to provide users with smooth color transitions and movements. Images have lazy loading and are adapted for Retina displays. Semantic HTML tags have been selected in accordance with best practices.
+## Features
 
-Technologies used in creating this website include:
-- HTML
-- SCSS
-- JavaScript
+- **Multi-page Structure** — Three pages: Studio (home), Portfolio, and Contacts
+- **Responsive Design** — Fully functional on desktop, tablet, and mobile devices
+- **Mobile Menu** — Adaptive navigation with hamburger menu on mobile devices
+- **Modal Form** — Service order form with smooth animations
+- **Portfolio Filtering** — Dynamic project filtering by category (websites, apps, design,
+  marketing)
+- **Interactive Elements** — Hover/focus effects with smooth transitions and animations
+- **Retina Ready** — Optimized images with srcset for high-resolution displays
+- **Lazy Loading** — Images load efficiently to improve performance
 
+## Tech Stack
+
+- **Markup**: HTML5 (semantic tags)
+- **Styling**: SCSS (with BEM methodology and modular structure)
+- **Interactivity**: Vanilla JavaScript
+- **Icons**: SVG sprite
+- **Fonts**: Google Fonts (Roboto, Raleway)
+- **Normalization**: modern-normalize
+
+## Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/webstudio.git
+
+# Open with live server
+# Or simply open index.html in your browser
+```
+
+## Development
+
+The project uses SCSS with BEM methodology. To modify styles:
+
+1. Edit SCSS files in the `scss/` directory
+2. Compile to CSS (using Prepros, VS Code Live Sass Compiler, or similar)
+3. The compiled CSS will be in `css/main.min.css`
+
+## Deployment
+
+The site is static and can be deployed to any hosting service (GitHub Pages, Netlify, Vercel).
+Simply upload the entire project folder.
